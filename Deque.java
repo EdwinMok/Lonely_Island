@@ -14,4 +14,8 @@ public interface Deque<Card>
 
     public boolean isEmpty();
 
+    public int size();
+
+    //public boolean contain(Card card);
+
 }
