@@ -1,12 +1,15 @@
 # Lonely_Island
 
 ## Method Selections
-  *
-  *
-  *
-  *
-  *
-  *
+
+  * public void addFirst( Card card );
+  * public void addLast( Card card );
+  * public Card removeFirst();
+  * public Card removeLast();
+  * public Card peekFirst();
+  * public Card peekLast();
+  * public boolean isEmpty();
+  
 ## Rationale for Container
  - We came to the conclusion that the argument between an ArrayList vs a Doubly Linked List boiled down 
   to a question of space vs. efficiency. An ArrayList would use less space, but its adding and removing
