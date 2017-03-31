@@ -9,6 +9,7 @@
   * public Card peekFirst();
   * public Card peekLast();
   * public boolean isEmpty();
+  * public int size();
   
 ## Rationale for Container
  - We came to the conclusion that the argument between an ArrayList vs a Doubly Linked List boiled down 
