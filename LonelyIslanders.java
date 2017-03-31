@@ -1,4 +1,8 @@
-public class QQKachoo<T> implements Deque<T>{
+public class LonelyIslanders<T> implements Deque<T>{
+
+    //Instance vars
+    private _size;
+    private ArrayList<T> _deque;
 
     //Default constructor
     public QQKachoo(){
