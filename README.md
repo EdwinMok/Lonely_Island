@@ -2,7 +2,7 @@
 
 ## Method Selections
 
-  * public void addFirst( Card card );
+  * public void addFirst( Card card ); 
   * public void addLast( Card card );
   * public Card removeFirst();
   * public Card removeLast();
@@ -10,6 +10,7 @@
   * public Card peekLast();
   * public boolean isEmpty();
   * public int size();
+  * public String toString();
   
 ## Rationale for Container
  - We came to the conclusion that the argument between an ArrayList vs a Doubly Linked List boiled down 
