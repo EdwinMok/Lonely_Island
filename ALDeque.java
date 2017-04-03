@@ -1,4 +1,4 @@
-/*Lonely_Island: Piotr Milewski, Daniel Regassa, Edwin Mok
+ /*Lonely_Island: Piotr Milewski, Daniel Regassa, Edwin Mok
   APCS2 pd5
   Lab02 -- All Hands on Deque!
   2017-03-31*/
