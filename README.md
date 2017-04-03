@@ -11,6 +11,7 @@
   * public boolean isEmpty();
   * public int size();
   * public String toString();
+  * public boolean contains( Card card );
   
 ## Rationale for Container
  - We came to the conclusion that the argument between an ArrayList vs a Doubly Linked List boiled down to a question of space vs. efficiency. 
