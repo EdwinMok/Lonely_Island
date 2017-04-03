@@ -4,11 +4,11 @@
 ## Method Selections
 
   * Add an item at the front end of the deque
-    \npublic void addFirst( Card card ); 
-    \nWe chose the addFirst() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
+    public void addFirst( Card card ); 
+    We chose the addFirst() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
   * Add an item at the back end of the deque
-    \npublic void addLast( Card card );
-    \nWe chose the addLast() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
+    public void addLast( Card card );
+    We chose the addLast() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
   * Remove the item at the front end of the deque
     public Card removeFirst();
     We chose the removeFirst() because we prefer for the program to throw a NoSuchElementException to notify the user why his remove request couldn't be processed.
