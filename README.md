@@ -4,8 +4,8 @@
 ## Method Selections
 
   * public void addFirst( Card card ); 
-  ** Add an item at the front end of the deque
-  ** We chose the addFirst() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
+    * Add an item at the front end of the deque
+    * We chose the addFirst() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
   * Add an item at the back end of the deque
     public void addLast( Card card );
     We chose the addLast() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
