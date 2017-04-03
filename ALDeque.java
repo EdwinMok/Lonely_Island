@@ -128,6 +128,21 @@ public class ALDeque<T> implements Deque<T>{
     }
 
     /*
+      Checks to see if deque contains the specified element
+      precondition: x is of the same type as ALDeque
+      postcondition: returns true if the deque contains x
+                     retuns false if the deque doesn't contain x
+    */
+    public boolean contains(T x){
+	for (int i = 0; i < _size; i++){
+	    if (_deque.get(i).equals(x)){
+		return true;
+	    }
+	}
+	return false;
+    }	
+
+    /*
       Prints out the items in the deque, from front end to back end
       precondition: none
       postcondition: returns a string representation of the items in the deque beginning at the front end and ending at the back end
@@ -157,6 +172,11 @@ public class ALDeque<T> implements Deque<T>{
 	System.out.println("\nnow testing toString()...");
 	System.out.println( bigThings );
 
+	System.out.println("\nnow testing contains()...");
+	System.out.println( bigThings.contains("plane") );
+	System.out.println( bigThings.contains("building") );
+	System.out.println( bigThings.contains("truck") );
+
 	System.out.println("\nnow testing peek methods...");
 	System.out.println( bigThings.peekFirst() );
 	System.out.println( bigThings.peekLast() );
@@ -171,7 +191,7 @@ public class ALDeque<T> implements Deque<T>{
 	System.out.println( bigThings.removeLast() );
 	System.out.println( bigThings.removeLast() );
 
-	System.out.println("\nnow peeking from empty deque");
+	System.out.println("\nnow peeking from empty deque...");
 	System.out.println( bigThings.peekFirst() );
 
 	//Will throw an exception

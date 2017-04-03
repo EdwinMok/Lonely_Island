@@ -16,6 +16,6 @@ public interface Deque<Card>
 
     public int size();
 
-    //public boolean contain(Card card);
+    public boolean contains(Card card);
 
 }
