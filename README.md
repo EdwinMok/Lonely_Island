@@ -1,17 +1,39 @@
 # Lonely_Island
+## Piotr Milewski, Daniel Regassa, Edwin Mok
 
 ## Method Selections
 
-  * public void addFirst( Card card ); 
-  * public void addLast( Card card );
-  * public Card removeFirst();
-  * public Card removeLast();
-  * public Card peekFirst();
-  * public Card peekLast();
-  * public boolean isEmpty();
-  * public int size();
-  * public String toString();
-  * public boolean contains( Card card );
+  * Add an item at the front end of the deque
+    public void addFirst( Card card ); 
+    We chose the addFirst() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
+  * Add an item at the back end of the deque
+    public void addLast( Card card );
+    We chose the addLast() because we aren't using a capacity-restricted deque and we would prefer for it to throw an exception over returning a special value since the user shouldn't be putting elements of different types in the Deque.
+  * Remove the item at the front end of the deque
+    public Card removeFirst();
+    We chose the removeFirst() because we prefer for the program to throw a NoSuchElementException to notify the user why his remove request couldn't be processed.
+  * Remove the item at the back end of the deque
+    public Card removeLast();
+    We chose the removeLast() because we prefer for the program to throw a NoSuchElementException to notify the user why his remove request couldn't be processed.
+  * Return the item at the front end of the deque
+    public Card peekFirst();
+    We chose the peekFirst() because we would prefer for the program to return null if there is nothing in the Deque rather than terminating the program with an exception.
+  * Return the item at the back end of the deque
+    public Card peekLast();
+    We chose the peekLastFirst() because we would prefer for the program to return null if there is nothing in the Deque rather than terminating the program with an exception.
+  * Check to see if the deque is empty
+    public boolean isEmpty();
+    We chose the isEmpty() because it is a useful helper method for some of our other methods and could tell the user when his Deque doesn't contain anything.
+  * Accessor for the size of the deque
+    public int size();
+    We chose the size() because it is useful for the user to see how many items are inside his Deque at any given time.
+  * Checks to see if deque contains the specified element
+    public boolean contains( Card card );
+    We chose the contains() because it is useful for the user to check to see if an item could be found in his Deque.
+  * Prints out the items in the deque, from front end to back end
+    public String toString();
+    We chose the toString() to overwrite the given toString() and to show the content of the Deque in an orderly fashion.
+
   
 ## Rationale for Container
  - We came to the conclusion that the argument between an ArrayList vs a Doubly Linked List boiled down to a question of space vs. efficiency. 
