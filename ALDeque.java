@@ -28,7 +28,7 @@ public class ALDeque<T> implements Deque<T>{
       postcondition: x is added to the front of the deque
     */
     public void addFirst(T x){
-	_deque.add(x);
+	_deque.add(0,x);
 	_size++;
     }
 
