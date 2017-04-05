@@ -1,4 +1,4 @@
- /*Lonely_Island: Piotr Milewski, Daniel Regassa, Edwin Mok
+/*Lonely_Island: Piotr Milewski, Daniel Regassa, Edwin Mok
   APCS2 pd5
   Lab02 -- All Hands on Deque!
   2017-03-31*/
@@ -36,7 +36,7 @@ public class ALDeque<T> implements Deque<T>{
       Add an item at the back end of the deque
       precondition: x is of the same type as ALDeque
       postcondition: x is added to the back of the deque
-     */
+    */
     public void addLast(T x){
 	_deque.add(_size,x);
 	_size++;
@@ -46,7 +46,7 @@ public class ALDeque<T> implements Deque<T>{
       Remove the item at the front end of the deque
       precondition: none
       postcondition: returns the item at the front end of the deque
-                     NoSuchElementException if this deque is empty
+      NoSuchElementException if this deque is empty
     */
     public T removeFirst(){
 	T x = null;
@@ -64,7 +64,7 @@ public class ALDeque<T> implements Deque<T>{
       Remove the item at the back end of the deque
       precondition: none
       postcondition: returns the item at the back end of the deque
-                     NoSuchElementException if this deque is empty
+      NoSuchElementException if this deque is empty
     */
     public T removeLast(){
 	T x = null;
@@ -82,7 +82,7 @@ public class ALDeque<T> implements Deque<T>{
       Return the item at the front end of the deque
       precondition: none
       postcondition: returns the item at the front end of the deque
-                     returns null if this deque is empty
+      returns null if this deque is empty
     */
     public T peekFirst(){
 	if (!isEmpty()){
@@ -97,11 +97,11 @@ public class ALDeque<T> implements Deque<T>{
       Return the item at the back end of the deque
       precondition: none
       postcondition: returns the item at the back end of the deque
-                     returns null if this deque is empty
+      returns null if this deque is empty
     */
     public T peekLast(){
 	if (!isEmpty()){
-	return _deque.get(_size-1);
+	    return _deque.get(_size-1);
 	}
 	else{
 	    return null;
@@ -112,7 +112,7 @@ public class ALDeque<T> implements Deque<T>{
       Check to see if the deque is empty
       precondition: none
       postcondition: returns true if the deque is empty
-                     returns false if the deque isn't empty
+      returns false if the deque isn't empty
     */
     public boolean isEmpty(){
 	return _size == 0;
@@ -131,7 +131,7 @@ public class ALDeque<T> implements Deque<T>{
       Checks to see if deque contains the specified element
       precondition: x is of the same type as ALDeque
       postcondition: returns true if the deque contains x
-                     retuns false if the deque doesn't contain x
+      retuns false if the deque doesn't contain x
     */
     public boolean contains(T x){
 	for (int i = 0; i < _size; i++){
