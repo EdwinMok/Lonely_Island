@@ -7,7 +7,7 @@ public class DequeTester{
 	
 	//instantiate new deque
 	Deque D = new ALDeque<String>();
-
+	/*
 	//test poll on empty deque;should all return exception
 	System.out.println(D.removeFirst());
 	System.out.println(D.removeFirst());
@@ -19,7 +19,7 @@ public class DequeTester{
 	System.out.println(D.peekFirst());
 	System.out.println(D.peekLast());
 	System.out.println(D.peekLast());
-
+	*/
 	//testing size() on empty deque;should return zero
 	System.out.println(D.size());
 
